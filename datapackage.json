@@ -1,0 +1,329 @@
+{
+  "bytes": 1540602,
+  "datahub": {
+    "created": "2017-11-09T01:16:24.332845",
+    "findability": "published",
+    "flowid": "core/nasdaq-listings/7",
+    "modified": "2018-03-15T06:37:38.366116",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "30045e0c54555d2283e48998f7ad22b1",
+  "id": "core/nasdaq-listings",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Public Domain Dedication and License"
+    }
+  ],
+  "name": "nasdaq-listings",
+  "resources": [
+    {
+      "bytes": 258891,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/4fa32268b23e749698edead5481bc2e0.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed_original",
+      "path": "archive/nasdaq-listed.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Security Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Market Category",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Test Issue",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Financial Status",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Round Lot Size",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 93327,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/852d69ca5baa2a724499eb3ef1fe09f3.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed-symbols_original",
+      "path": "archive/nasdaq-listed-symbols.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 1252,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpr4rdi6hs/core/nasdaq-listings/validation_report/data/a610b6b2b9d1eb5fc2de87024cbd505c/validation_report.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "a610b6b2b9d1eb5fc2de87024cbd505c",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 259096,
+      "datahub": {
+        "derivedFrom": [
+          "nasdaq-listed"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpr4rdi6hs/core/nasdaq-listings/nasdaq-listed_csv/data/7665719fb51081ba0bd834fde71ce822/nasdaq-listed_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "7665719fb51081ba0bd834fde71ce822",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed_csv",
+      "path": "data/nasdaq-listed_csv.csv",
+      "profile": "data-resource",
+      "rowcount": 2967,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Security Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Market Category",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Test Issue",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Financial Status",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Round Lot Size",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 93532,
+      "datahub": {
+        "derivedFrom": [
+          "nasdaq-listed-symbols"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpr4rdi6hs/core/nasdaq-listings/nasdaq-listed-symbols_csv/data/595a1f263719c09a8a0b4a64f17112c6/nasdaq-listed-symbols_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "595a1f263719c09a8a0b4a64f17112c6",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed-symbols_csv",
+      "path": "data/nasdaq-listed-symbols_csv.csv",
+      "profile": "data-resource",
+      "rowcount": 2967,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 647720,
+      "datahub": {
+        "derivedFrom": [
+          "nasdaq-listed"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpr4rdi6hs/core/nasdaq-listings/nasdaq-listed_json/data/a5bc7580d6176d60ac0b2142ca8d7df6/nasdaq-listed_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "a5bc7580d6176d60ac0b2142ca8d7df6",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed_json",
+      "path": "data/nasdaq-listed_json.json",
+      "profile": "data-resource",
+      "rowcount": 2967,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Security Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Market Category",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Test Issue",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Financial Status",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Round Lot Size",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 185586,
+      "datahub": {
+        "derivedFrom": [
+          "nasdaq-listed-symbols"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpr4rdi6hs/core/nasdaq-listings/nasdaq-listed-symbols_json/data/5c10087ff8d283899b99f1c126361fa7/nasdaq-listed-symbols_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "5c10087ff8d283899b99f1c126361fa7",
+      "mediatype": "text/csv",
+      "name": "nasdaq-listed-symbols_json",
+      "path": "data/nasdaq-listed-symbols_json.json",
+      "profile": "data-resource",
+      "rowcount": 2967,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Company Name",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1198,
+      "dpp:streamedFrom": "/tmp/tmp9toxrjd_/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NASDAQ official page",
+      "path": "http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs",
+      "title": "NASDAQ official page"
+    }
+  ],
+  "title": "Nasdaq Listings"
+}
