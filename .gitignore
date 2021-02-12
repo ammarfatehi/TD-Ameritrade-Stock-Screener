@@ -1,4 +1,1 @@
-*
-
-!.gitignore
-!config.py
+config.py
